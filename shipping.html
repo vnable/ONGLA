@@ -30,24 +30,24 @@
             <br>
             <form> <!-- form sirve para crear un cuadro de informacion que el usuario puede llenar-->
                 <label for="pnombre">Primer nombre</label> <!-- label es el texto antes del recuadro!-->
-                <input type="text" id="pnombre" name="pnombre"> <!-- input es para pedir que clase de cosa ingresa el usuario en este caso texto-->
+                <input type="text" id="pnombre" name="pnombre" style="width:204px"> <!-- input es para pedir que clase de cosa ingresa el usuario en este caso texto-->
             </form>
             <br>   <!-- el for y el id son para conectar un label a a su respectivo recuadro de datos (deben tener lo mismo como en el de arriba que tienen pnombre ambos) -->
             <form> 
                 <label for="papellido">Primer apellido</label> 
-                <input type="text" id="papellido" name="papellido"> 
+                <input type="text" id="papellido" name="papellido" style="width:200px"> 
             </form>
             <br> <!-- name es para darle el nombre a la variable una vez se suba a la base de datos-->
             <form> 
-                <label for="rut">rut</label> 
-                <input type="text" id="rut" name="rut" placeholder="00.000.000-0">  <!-- placeholder sirve para mostar un texto en el recuadro antes de que se le haga click -->
+                <label for="rut">Rut</label> 
+                <input type="text" id="rut" name="rut" placeholder="00.000.000-0" style="width:100px">  <!-- placeholder sirve para mostar un texto en el recuadro antes de que se le haga click -->
             </form>
             <br> <!-- y estas coasas <br> son solo para crear espacios y que no este todo junto, aproveche de poner las anotaciones aqui pero no cambian anda -->
             <div> <!-- selectores -->
                 <label for="genero">Genero:  </label> 
-                <label for="masculino">Masc</label>
+                <label for="masculino">Masculino</label>
                 <input type="radio" id="masculino" name="genero" value="Masculino">
-                <label for="femenino">Fem</label>
+                <label for="femenino">Femenino</label>
                 <input type="radio" id="femenino "name="genero" value="Femenino">
                 <label for="Otro">Otro</label>
                 <input type="radio" id="otro" name="genero" value="Otro">
@@ -60,23 +60,27 @@
             <br>
             <form> 
                 <label for="Region">Region</label> 
-                <input type="text" id="Region" name="Region"> 
+                <input type="text" id="Region" name="Region" style="width:270px"> 
             </form>
             <br>
             <form> 
-                <label for="comuna">comuna</label> 
-                <input type="text" id="comuna" name="comuna"> 
+                <label for="comuna">Comuna</label> 
+                <input type="text" id="comuna" name="comuna" style="width:265px"> 
             </form>
             <br>
             <form> 
-                <label for="direccion">direccion</label> 
-                <input type="text" id="direccion" name="direccion"> 
+                <label for="direccion">Direccion</label> 
+                <input type="text" id="direccion" name="direccion" style="width:255px"> 
             </form>
             <br>
             <form> 
                 <label for="postal">C. postal</label> 
-                <input type="text" id="postal" name="postal"> 
+                <input type="text" id="postal" name="postal" style="width:258px"> 
             </form>
+        </div>
+        <br>
+        <div>
+            <input type="submit" class="FButton">
         </div>
     </nav>
     <div class="principal">
