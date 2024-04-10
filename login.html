@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byte Bazar - Venta de Hardware y Componentes</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <header>
+            <nav class="flex-top">
+                <img src="logo_robot_v2.png" class="imagen" width="65"height="65">
+                <p><a href="pagprincipal.html">INICIO<img src="pp_home.png" alt="" class="iconos" width="60" height="60"></a></p>
+                <a href="shipping.html">SHIPPING<img src="pp_shipping.png" alt="" class="iconos" width="60" height="60"></a>
+                <a href="sucursales.html">SUCURSALES<img src="pp_map.png" alt="" class="iconos" width="60" height="60"></a>
+                <div class="flex-top-right">
+                    <a href="login.html"><img src="pp_user.png" alt="" class="iconos" width="60" height="60"></a>
+                    <a href="cart.html"><img src="pp_cart.png" alt="" class="iconos" width="60" height="60"></a>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="registro-form">
+        <header>Registrarse en el sistema</header>
+        <br>
+        <form action="pagina-de-registro.php">
+            <h1><b>Registro</b></h1>
+            <p>Por favor, ingrese sus datos para crear una cuenta</p>
+            <hr>
+            <label for="email"><b>Correo</b></label>
+            <br>
+            <input type="text" placeholder="Ingrese el email" name="email" id="email" required>
+            <br>
+            <label for="password"><b>Contraseña</b></label>
+            <br>
+            <input type="text" placeholder="Ingrese la contraseña" name="password" id="password" required>
+            <br>
+            <label for="pass-repeat"><b>Repita la contraseña</b></label>
+            <br>
+            <input type="text" placeholder="Repita la contraseña" name="pass-repeat" id="pass-repeat" required>
+            <hr>
+            <p>Al crear una cuenta aceptas nuestros <a href="#">términos & condiciones</a>.</p>
+            <button type="submit" class="fButton">Registrarse</button>
+        
+        </form>
+        <div>
+            <p>Ya tienes una cuenta? <a href="#">Íngresa aquí</a>.</p>
+        </div>
+    </div>
+</body>
