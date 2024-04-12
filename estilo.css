@@ -53,6 +53,7 @@ body{
     font-size: 40px;
   }
 
+
   .form-shipping{
     display: flex;
     flex-direction: column;
@@ -117,6 +118,22 @@ body{
   }
   .iconos{
     vertical-align: middle;
+  }
+  .CantButton{
+    background-color: #dee0e3;
+    border: none;
+    color:#ff6333;
+    padding: 1px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+  }
+  .CantButton:hover{
+    color:red;
+    cursor: pointer;
   }
   .FButton{
     background-color: white;
