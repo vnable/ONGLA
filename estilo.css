@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 html body {
-  background-color: #ececec;
+  background-color: rgb(233, 249, 252)
 }
 .flex-top {
     display: flex;
@@ -17,22 +17,27 @@ html body {
     font-size: 200%;
     position: fixed;
     top: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   }
-  .flex-izq {
+  .flex-izq{
     width: 300px;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: white;
+    background-color: #ff6333;
     /* margin-right: 165vh; */
     margin-top: 20px;
+    padding-bottom: 100%;
      /*border: none !important;*/
      /*height: calc(100vh - -200px);*/
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     position: fixed;
     z-index: 1;
+    box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  .flex-izq a{
+    color: white !important;
   }
   .Tcarrito{
     display: flex;
@@ -252,7 +257,7 @@ html body {
   } 
 
   .desplegable-contenido:hover a:hover{
-    background-color: #ff6333;
+    background-color: #f03255;
     font-style: italic;
     color: black !important;
   }
@@ -310,7 +315,7 @@ html body {
     padding-bottom: 10px;
   }
   .carousel {
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 260px;
     margin-right: auto;
     overflow: hidden; /* Esto evita que las esquinas de las imágenes se muestren fuera del borde */
@@ -320,5 +325,4 @@ html body {
     height: 100%; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
     margin: 0;
     padding: 0;
-    object-fit: cover;
   }
