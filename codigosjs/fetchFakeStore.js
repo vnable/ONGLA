@@ -18,7 +18,7 @@ async function fetchFakeStore(){
 
 function createProduct (product) {
     // Desesctructuramos el objeto
-    const { title, image, price  } = productit add
+    const { title, image, price  } = product
 
     // Creamos un div con la clase 'col'
     const colDiv = document.createElement("div");
