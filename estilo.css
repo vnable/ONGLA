@@ -6,12 +6,12 @@ html body {
 .flex-top {
     display: flex;
     justify-content: space-around;
-    align-items: normal;
+    align-items: center;
     background-color: white;
     margin-left: auto;
     margin-top: auto;
-    z-index: 2;
-    width: 100.7%;
+    z-index: 1;
+    width: 100%;
     height: 68px;
     border: none !important;
     font-size: 200%;
@@ -33,7 +33,7 @@ html body {
      /*border: none !important;*/
      /*height: calc(100vh - -200px);*/
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2);
   }
   .flex-izq a{
@@ -46,7 +46,7 @@ html body {
     align-items: center;
     margin-top: 15vh;
     width: 100%;
-    height: 10% ;
+    height: 10%;
     font-size: 40px;
   }
   .form-login{
@@ -236,7 +236,7 @@ html body {
     background-color: black;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 2;
+    z-index: 3;
     border-radius: 8px;
   }
 
@@ -252,7 +252,7 @@ html body {
     background-color: transparent;
     padding: 16px;
     font-size: 16px;
-    z-index: 2;
+    z-index: 4;
     border: none;
     border-radius: 8px;
   }
