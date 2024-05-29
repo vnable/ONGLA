@@ -1,0 +1,14 @@
+{% load static %}
+
+<header>
+    <nav class="flex-top">
+        <img src="{% static 'img/logo_robot_v2.png' %}" class="imagen" width="65px"height="65px" >
+        <a href="{% url 'home' %}">INICIO<img src="{% static 'img/pp_home.png' %}" alt="" class="iconos" width="40px" height="40px"></a>
+        <a href="{% url 'shipping' %}">ENVÍO<img src="{% static 'img/pp_shipping.png' %}" alt="" class="iconos" width="40px" height="40px"></a>
+        <a href="sucursales.html">SUCURSALES<img src="{% static 'img/pp_map.png' %}" alt="" class="iconos" width="40px" height="40px"></a>
+        <div class="flex-top-right">
+            <a href="login2.html"><img src="{% static 'img/pp_user.png' %}" alt="" class="iconos" width="40px" height="40px"></a>
+            <a href="cart.html"><img src="{% static 'img/pp_cart.png' %}" alt="" class="iconos" width="40px" height="40px"></a>
+        </div>
+    </nav>
+</header>
