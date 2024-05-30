@@ -10,5 +10,5 @@ def login2(request):
 def shipping(request): 
     return render(request, "shipping.html")
 def sucursales(request): 
-    return render(request, "pagprincipal.html")
+    return render(request, "sucursales.html")
 # Create your views here.
