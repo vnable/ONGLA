@@ -12,6 +12,7 @@ urlpatterns = [
     path('Logindjango', LoginView.as_view(template_name="Logindjango.html"), name="Logindjango"),
     path('login2', login2, name="login2"),
     path('shipping', shipping, name="shipping"),
+    path('logout2', logout2, name="logout2"),
     path('sucursales', sucursales, name="sucursales"),
-    path('logout', auth_views.LogoutView.as_view(next_page='logout.html'), name="logout"),
+    path('logout', auth_views.LogoutView.as_view(), name="logout"),
 ]
