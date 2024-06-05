@@ -11,4 +11,8 @@ def shipping(request):
     return render(request, "shipping.html")
 def sucursales(request): 
     return render(request, "sucursales.html")
+def Logindjango(request): 
+    return render(request, "logindjango.html")
+def logout(request): 
+    return render(request, "logout.html")
 # Create your views here.
