@@ -8,13 +8,13 @@
         <a href="{% url 'sucursales' %}">SUCURSALES<img src="{% static 'img/pp_map.png' %}" alt="" class="iconos" width="40px" height="40px"></a>
         <div class="flex-top-right">
             {% if user.is_authenticated %}
-                <div class="desplegable">
-                    <button class="desplegable-boton"><a>{{ user.username}}<img src="{% static 'img/pp_arrow.png' %}" alt="" class="iconos" width="24" height="24"></a>
+                <div class="desplegable2">
+                    <button class="desplegable2-boton"><a>{{ user.username}}<img src="{% static 'img/pp_arrow.png' %}" alt="" class="iconos" width="24" height="24"></a>
                     </button>
-                    <div class="desplegable-contenido">
+                    <div class="desplegable2-contenido">
                         <form action="{% url 'logout' %}" method="post">
                             {% csrf_token %}
-                            <button type="submit" class="ButtonOut">cerrar sesion</button>
+                            <button type="submit" class="desplegable2-boton">cerrar sesion</button>
                         </form>
                     </div>
                 </div>
