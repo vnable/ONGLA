@@ -436,3 +436,65 @@ html body {
     margin-left: 100px;
     margin-top: 100px;
   }
+  main {
+    flex: 1;
+}
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.login-container {
+  margin: 30vh auto 0 auto; /* Centrando el div horizontalmente */
+  width: 50%;
+  text-align: center;
+}
+.login-container h1 {
+  font-family: 'Ubuntu';
+  color: #ff6333;
+  margin-top: 150px;
+}
+.form-login {
+  margin-top: 80px;
+}
+.create-account {
+  font-weight: bold;
+  font-family: 'Ubuntu';
+  margin-top: 20px;
+}
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+}
+.footer-container {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+  max-width: 300px;
+  text-align: right;
+}
+.footer-section h3 {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.footer-section p {
+  margin: 0;
+  line-height: 1.6;
+}
+.footer-bottom {
+    text-align: right;
+    padding: 10px;
+    border-top: 1px solid #fff;
+}
