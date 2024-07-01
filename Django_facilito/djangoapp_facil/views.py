@@ -6,7 +6,9 @@ from djangoapp_facil.tienda import Carrito
 from .models import Producto
 
 def home(request):
-    return render(request, "pagprincipal.html")
+    productos = Producto.objects.all()
+    context = {'productos': productos}
+    return render(request, "pagprincipal.html", context)
 
 def cart(request):
     return render(request, "cart.html")
@@ -37,21 +39,21 @@ def agregar_producto(request, producto_id):
     carrito = Carrito(request)
     producto = Producto.objects.get(id=producto_id)
     carrito.agregar(producto)
-    return redirect("tienda")
+    return redirect("home")
 
 def eliminar_producto(request, producto_id):
     carrito = Carrito(request)
     producto = Producto.objects.get(id=producto_id)
     carrito.eliminar(producto)
-    return redirect("tienda")
+    return redirect("home")
 
 def restar_producto(request, producto_id):
     carrito = Carrito(request)
     producto = Producto.objects.get(id=producto_id)
     carrito.restar(producto)
-    return redirect("tienda")
+    return redirect("home")
 
 def limpiar_carrito(request):
     carrito = Carrito(request)
     carrito.limpiar()
-    return redirect("tienda")
+    return redirect("home")

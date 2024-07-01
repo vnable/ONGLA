@@ -10,7 +10,6 @@ from djangoapp_facil.views import agregar_producto, eliminar_producto, limpiar_c
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name="home"),
-    path('cart/', views.cart, name="cart"),
     path('login/', views.login, name="login"),
     path('Logindjango/', LoginView.as_view(template_name="Logindjango.html"), name="Logindjango"),
     path('login2/', views.login2, name="login2"),

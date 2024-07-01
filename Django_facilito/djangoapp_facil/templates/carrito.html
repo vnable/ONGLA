@@ -1,8 +1,8 @@
-<div class="alert alert-primary" role="alert">
+<div class="text-bg-light p-3" style="font-style: normal;">
     <table class="table table-bordered">
         <thead>
             <tr>
-                <th scope="row" colspan="3" class="text-center">CARRITO</th>
+                <th scope="row" colspan="3" class="text-center" style="color: #ff6333;">CARRITO</th>
             </tr>
             <tr>
                 <th scope="col">NOMBRE</th>
@@ -14,30 +14,30 @@
     {% if request.session.carrito.items %}
     {% for key, value in request.session.carrito.items %}
         <tr>
-            <td>{{value.nombre}}</td>
+            <td style="color: #ff6333;">{{value.nombre}}</td>
             <td>{{value.precio}}</td>
             <td>{{value.acumulado}}
-                <a href="{% url 'add' value.producto_id %}" class="badge btn btn-dark badge-dark">+</a>
-                <a href="{% url 'sub' value.producto_id %}" class="badge btn btn-dark badge-dark">-</a>
+                <a href="{% url 'add' value.producto_id %}" class="badge text-bg-dark">+</a>
+                <a href="{% url 'sub' value.producto_id %}" class="badge text-bg-dark">-</a>
             </td>
         </tr>
     {% endfor %}
     {% else %}
     <tr>
         <td colspan="3">
-            <div class="alert alert-danger text-center">¡Sin productos!</div>
+            <div class="alert alert-danger text-center" style="font-style: italic; color: #ff6333;">¡Sin productos!</div>
         </td>
     </tr>
     {% endif %}
         <tr>
-            <th scope="row">Total:</th>
+            <th scope="row" style="color: #ff6333;">Total:</th>
             <td colspan="2">$ {{total_carrito}}</td>
         </tr>
     </tbody>
 </table>
 <hr>
 </div>
-<div class="row text-center">
-    <div class="col-6"><a href="{% url 'cls' %}" class="btn btn-danger">Limpiar</a></div>
-    <div class="col-6"><a href="#" class="btn btn-success">Guardar</a></div>
+<div class="row text-center mx-4">
+    <div class="col-12"><a href="{% url 'cls' %}" class="btn btn-danger">Limpiar</a></div>
+    <div class="col-12"><a href="#" class="btn btn-dark">Pagar</a></div>
 </div>
