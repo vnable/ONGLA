@@ -6,6 +6,9 @@
         <a href="{% url 'home' %}">INICIO<img src="{% static 'img/pp_home.png' %}" alt="" class="iconos" width="40px" height="40px"></a>
         <a href="{% url 'shipping' %}">ENVÍO<img src="{% static 'img/pp_shipping.png' %}" alt="" class="iconos" width="40px" height="40px"></a>
         <a href="{% url 'sucursales' %}">SUCURSALES<img src="{% static 'img/pp_map.png' %}" alt="" class="iconos" width="40px" height="40px"></a>
+        <button id="dark-mode-toggle" style="position: relative; cursor: pointer; background-color: transparent; border: none;">
+            <img src="{% static 'img/bombilla.png' %}" alt="Modo Oscuro" class="iconos" width="40px" height="40px">
+        </button>
         <div class="flex-top-right">
             {% if user.is_authenticated %}
                 <div class="desplegable2">
@@ -20,7 +23,7 @@
                     </div>
                 </div>
             {% else %}
-                <a href="{% url 'Logindjango' %}"><img src="{% static 'img/pp_user.png' %}" alt="" class="iconos" width="40px" height="40px"></a>
+                <a href="{% url 'Logindjango' %}"><img src="{% static 'img/pp_user.png' %}" alt="" class="iconos" width="40px" height="40px" style="margin-top: 2vh;"></a>
             {% endif %}
             <div class="desplegable">
                 <div class="desplegable-boton">
@@ -32,4 +35,5 @@
             </div>
         </div>
     </nav>
+<script src="{% static 'codigosjs/code.js' %}"></script>
 </header>

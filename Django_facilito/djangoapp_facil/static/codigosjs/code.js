@@ -36,3 +36,18 @@ document.addEventListener('DOMContentLoaded', function () {
     password.addEventListener('input', ActualizarBoton);
     confirmPassword.addEventListener('input', ActualizarBoton);
 });
+//modo oscuro
+document.addEventListener('DOMContentLoaded', (event) => {
+    const toggleButton = document.getElementById('dark-mode-toggle');
+    toggleButton.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        const isDarkMode = document.body.classList.contains('dark-mode');
+        localStorage.setItem('darkMode', isDarkMode);
+    });
+
+    // Verificar el modo almacenado en localStorage
+    const darkMode = localStorage.getItem('darkMode') === 'true';
+    if (darkMode) {
+        document.body.classList.add('dark-mode');
+    }
+});

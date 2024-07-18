@@ -7,14 +7,14 @@
             <tr>
                 <th scope="col">NOMBRE</th>
                 <th scope="col">PRECIO</th>
-                <th scope="col">CANTIDAD</th>
+                <th scope="col">TOTAL</th>
             </tr>
         </thead>
     <tbody>
     {% if request.session.carrito.items %}
     {% for key, value in request.session.carrito.items %}
         <tr>
-            <td style="color: #ff6333;">{{value.nombre}}</td>
+            <td style="color: rgb(255, 99, 51);">{{value.nombre}}</td>
             <td>{{value.precio}}</td>
             <td>{{value.acumulado}}
                 <a href="{% url 'add' value.producto_id %}" class="badge text-bg-dark">+</a>
