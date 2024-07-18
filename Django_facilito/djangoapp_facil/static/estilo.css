@@ -116,7 +116,19 @@ body.dark-mode .footer-bottom {
   .flex-izq {
     display: none;
   }
+  
+  .txtmenu{
+    display: none; 
+  }
 }
+
+@media only screen and (min-width: 1200px) {
+  .txtsmall{
+    display: none; 
+  }
+}
+
+
   .Tcarrito{
     display: flex;
     flex-direction: column;
@@ -536,3 +548,4 @@ body {
   font-family: 'Ubuntu';
   margin-top: 20px;
 }
+

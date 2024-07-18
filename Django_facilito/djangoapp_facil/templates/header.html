@@ -3,9 +3,12 @@
 <header>
     <nav class="flex-top">
         <img src="{% static 'img/logo_robot_v2.png' %}" class="imagen" width="65px"height="65px" >
-        <a href="{% url 'home' %}">INICIO<img src="{% static 'img/pp_home.png' %}" alt="" class="iconos" width="40px" height="40px"></a>
-        <a href="{% url 'shipping' %}">ENVÍO<img src="{% static 'img/pp_shipping.png' %}" alt="" class="iconos" width="40px" height="40px"></a>
-        <a href="{% url 'sucursales' %}">SUCURSALES<img src="{% static 'img/pp_map.png' %}" alt="" class="iconos" width="40px" height="40px"></a>
+        <a href="{% url 'home' %}" class="txtmenu">INICIO<img src="{% static 'img/pp_home.png' %}" alt="" class="iconos" width="40px" height="40px"></a>
+        <a href="{% url 'home' %}" class="txtsmall"><img src="{% static 'img/pp_home.png' %}" alt="" class="iconos" width="40px" height="40px"></a>
+        <a href="{% url 'shipping' %}" class="txtmenu">ENVÍO<img src="{% static 'img/pp_shipping.png' %}" alt="" class="iconos" width="40px" height="40px"></a>
+        <a href="{% url 'shipping' %}" class="txtsmall"><img src="{% static 'img/pp_shipping.png' %}" alt="" class="iconos" width="40px" height="40px"></a>
+        <a href="{% url 'sucursales' %}" class="txtmenu">SUCURSALES<img src="{% static 'img/pp_map.png' %}" alt="" class="iconos" width="40px" height="40px"></a>
+        <a href="{% url 'sucursales' %}" class="txtsmall"><img src="{% static 'img/pp_map.png' %}" alt="" class="iconos" width="40px" height="40px"></a>
         <button id="dark-mode-toggle" style="position: relative; cursor: pointer; background-color: transparent; border: none;">
             <img src="{% static 'img/bombilla.png' %}" alt="Modo Oscuro" class="iconos" width="40px" height="40px">
         </button>
